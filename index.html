@@ -1,1 +1,321 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagha's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lexend:wght@100..900&family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/08c91763d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/coder-girl.jpg" class="logo">
+                <ul id="side-menu">
+                    <i class="fas fa-square-xmark" onclick="closeMenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Education</a></li>
+                    <li><a href="#services-exp">Experience</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#about1">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Software Engineer</p> -->
+                <p>Hello, my name is</p>
+                <h1><span>Anagha Naga Krishna</span></h1>
+                <br>
+                <br>
+                <br>
+                <p class="header-bio-text">I am a CS Masters student with 2 internships and 2 years of full time experience.</p>
+                <p class="header-bio-text">A quick learner and passionate software engineer, ready to make her mark in the tech industry.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/portfolio-headshot.png" alt="Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title light-bg">About me</h1>
+                    <p> I am a MS CS student at USC, set to graduate in May 2025.
+                    </p>
+                    <p>
+                        I also work as a Software Engineering R&D Intern at Sandia National Laboratories. 
+                    </p>
+                    <p>
+                        I am looking for Spring 2025 Internships as well as full-time opportunities staring from June 2025.
+                    </p>
+                    <br>
+                    <p class="usa">Citizenship:  United States of America 
+                        <img src="/images/united-states.png" class="usa-flag">
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link about-titles" onclick="openTab('langs')">Languages</p>
+                        <p class="tab-links about-titles" onclick="openTab('hobbies')">Hobbies/Interests</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="langs">
+                        <ul>
+                            <li>English<span>Native/Bilingual proficiency</span></li>
+                            <li>Kannada<span>Native/Bilingual proficiency</span></li>
+                            <li>Hindi<span>Elementary proficiency</span></li>
+                            <li>Sanskrit<span>Elementary proficiency</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li>Drawing<span id="emojis">🎨✏️</span></li>
+                            <li>Puzzle-solving<span id="emojis">🧩</span></li>
+                            <li>Formula 1<span id="emojis">🏎️</span></li>
+                            <li>Tennis<span id="emojis">🎾</span></li>
+                            <li>Cricket<span id="emojis">🏏</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EDUCATION SECTION -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My education</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-graduation-cap"></i><p>Aug 2023 - May 2025</p>
+                    <h2>University of Southern California</h2>
+                    <p>Master of Science in Computer Science</p>
+                    <p>GPA: 3.6/4</p>
+                    <br>
+                    <p>
+                        Courses:
+                        <ul>
+                            <li>Algorithms</li>
+                            <li>DBMS</li>
+                            <li>Web Technologies</li>
+                            <li>Security Systems</li>
+                            <li>Information Retrieval</li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-graduation-cap"></i>
+                    <p>Aug 2017 - Aug 2021</p>
+                    <h2>RNS Institute of Technology (VTU)</h2>
+                    <p>Bachelor of Engineering in Computer Science</p>
+                    <p>CGPA: 8.97/10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EXPERIENCE SECTION -->
+    <div id="services-exp">
+        <div class="container">
+            <h1 class="sub-title">My work experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <p>May 2024 - present</p>
+                    <h2>Sandia National Laboratories</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <p>Jan 2021 - Jul 2023</p>
+                    <h2>Infoblox</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <!-- <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Service 3</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#">Learn More</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- PROJECTS SECTION -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title light-bg">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img id="project-imgs" src="/images/Screenshot-stock-search.png" alt="Some image 1">
+                    <div class="layer">
+                        <h3>Stock Search</h3>
+                        <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        <br>
+                        <div class="icon-container">
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="project-imgs" src="/images/Screenshot-cgg-1.png" alt="Some image 2">
+                    <div class="layer">
+                        <h3>Card Game Galore</h3>
+                        <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        <br>
+                        <div class="icon-container">
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="project-imgs" src="/images/Screenshot-ADS01.png" alt="Some image 3">
+                    <div class="layer">
+                        <h3>Prediction of depression using tweets during the COVID-19 lockdown</h3>
+                        <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        <br>
+                        <div class="icon-container">
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="project-imgs" src="/images/Screenshot-tmt.png" alt="Some image 2">
+                    <div class="layer">
+                        <h3>Tailor-made Teller</h3>
+                        <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        <br>
+                        <div class="icon-container">
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="project-imgs" src="/images/Screenshot_knn_cl.jpg" alt="Some image 3">
+                    <div class="layer">
+                        <h3>Simulation of k-NN classifier</h3>
+                        <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                        <br>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- <a href="#" class="btn">See more</a> -->
+    <!-- SKILLS SECTION -->
+    <div id="about1">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-3">
+                    <h1 class="sub-title">Skills</h1>
+                    <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book. It has survived not only five centuries, but also the leap into 
+                        electronic typesetting, remaining essentially unchanged. 
+                    </p> -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link about-titles" onclick="openTab('prog_lang')">Programming Languages</p>
+                        <p class="tab-links about-titles" onclick="openTab('web')">Web Technologies/Frameworks</p>
+                        <p class="tab-links about-titles" onclick="openTab('db')">Databases</p>
+                        <p class="tab-links about-titles" onclick="openTab('tools')">Tools</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="prog_lang">
+                        <ul>
+                            <li>Python<span class="icons"><i class="fa-brands fa-python"></i></span></li>
+                            <li>JavaScript<span><i class="fa-brands fa-js"></i></span></li>
+                            <li>C<span><i class="fa-brands fa-cuttlefish"></i></span></li>
+                            <li>Swift<span><i class="fa-brands fa-swift"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="web">
+                        <ul>
+                            <li>HTML<span><i class="fa-brands fa-html5"></i></span></li>
+                            <li>CSS<span><i class="fa-brands fa-css3-alt"></i></span></li>
+                            <li>NodeJS<span><i class="fa-brands fa-node"></i></span></li>
+                            <li>React<span><i class="fa-brands fa-react"></i></span></li>
+                            <li>SwiftUI<span><i class="fa-brands fa-swift"></i></span></li>
+                            <li>TypeScript<span><i class="fa-solid fa-file-code"></i></span></li>
+                            <li>Flask<span><i class="fa-solid fa-file-code"></i></span></li>
+                            <li>FastAPI<span><i class="fa-solid fa-file-code"></i></span></li>
+                            <li>Starlette<span><i class="fa-solid fa-file-code"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="db">
+                        <ul>
+                            <li>MySQL<span><i class="fa-solid fa-database"></i></span></li>
+                            <li>MongoDB<span><i class="fa-solid fa-database"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li>Google Workspace<span><i class="fa-brands fa-google"></i></span></li>
+                            <li>Microsoft 365<span><i class="fa-brands fa-microsoft"></i></span></li>
+                            <li>Jira<span><i class="fa-brands fa-jira"></i></span></li>
+                            <li>Git<span><i class="fa-brands fa-git-alt"></i></span></li>
+                            <li>Postman<span><i class="fa-solid fa-user"></i></span></li>
+                            <li>Docker<span><i class="fa-brands fa-docker"></i></span></li>
+                            <li>Kubernetes<span><i class="fa-solid fa-dharmachakra"></i></span></li>
+                            <li>OpenShift<span><i class="fa-brands fa-redhat"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT SECTION -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title light-bg">Contact Me</h1>
+                <!-- <p><i class="fas fa-envelope"></i>nagakris@usc.edu</p> -->
+                <div class="social-icons">
+                    <a href="mailto:nagakris@usc.edu"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/anaghankrishna"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/anaghankrishna1"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <a href="/images/Anagha-Krishna-Resume-Portfolio.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        var sidemenu = document.getElementById("side-menu")
+
+        function openTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        function openMenu() {
+            sidemenu.style.right = "0px";
+        }
+    </script>
+</body>
+</html>
