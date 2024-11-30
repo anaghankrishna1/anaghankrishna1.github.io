@@ -234,6 +234,11 @@ nav ul li a:hover::after {
     background: #184048;
 }
 
+pre {
+    font-weight: 600;
+    font-size: 15px;
+}
+
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
